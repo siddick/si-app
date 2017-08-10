@@ -1,10 +1,10 @@
 {
-  "name": "my-api",
+  "name": "si-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "bin": {
-      "my-api": "lib/app.js"
+      "si-app": "lib/app.js"
   },
   "scripts": {
       "start": "node ./lib/app.js"
