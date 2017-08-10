@@ -1,0 +1,9 @@
+{
+    "logger": {
+        "enabled": true,
+        "module": {
+            "name": "morgan",
+            "arguments": ["combined"]
+        }
+    }
+}
