@@ -5,5 +5,36 @@
             "name": "morgan",
             "arguments": ["combined"]
         }
+    },
+    "session": {
+        "enabled": true,
+        "module": {
+            "name": "express-session",
+            "arguments": [{
+                "secret": "keyboard cat",
+                "resave": false,
+                "saveUninitialized": true
+            }]
+        }
+    },
+    "bodyParser": {
+        "enabled": true,
+        "parallel": {
+            "json": {
+                "enabled": true,
+                "module": {
+                    "name": "body-parser",
+                    "method": "json"
+                }
+            },
+            "urlencoded": {
+                "enabled": true,
+                "module": {
+                    "name": "body-parser",
+                    "method": "urlencoded",
+                    "arguments": [{ "extended": true }]
+                }
+            }
+        }
     }
 }
